@@ -442,18 +442,18 @@ if user_input:
             st.session_state.ultimo_contexto = contexto_para_ia
 
     mensagens = [
-        {
-            "role": "system",
-            "content": (
-                "Você é um assistente acadêmico especializado em teses e dissertações."
-                "Use o histórico de conversa e os documentos fornecidos para responder."
-                f"Se não tiver pdf relacionado ao assunto, apenas responda com {resposta_direta}"
-                "Se não houver documentos relevantes, utilize as informações do histórico anterior. "
-                "Se ainda assim não houver base suficiente, diga claramente que não há informações disponíveis no banco de dados. "
-                "Seja direto, acadêmico e objetivo, e finalize informando o total de documentos usados e seus links."
-            )
-        }
-    ]
+            {
+                "role": "system",
+                "content": (
+                    "Você é um assistente acadêmico especializado em teses e dissertações."
+                    "Use o histórico de conversa e os documentos fornecidos para responder."
+                    f"Se não tiver pdf relacionado ao assunto, apenas responda com {resposta_direta}"
+                    "Se não houver documentos relevantes, utilize as informações do histórico anterior. "
+                    "Se ainda assim não houver base suficiente, diga claramente que não há informações disponíveis no banco de dados. "
+                    "Seja direto, acadêmico e objetivo, e finalize informando o total de documentos e o titulo de cada arquivo (não fale o nome do documento)."
+                )
+            }
+        ]
 
     for role, message in st.session_state.chat_history:
         mensagens.append({"role": role, "content": message})
@@ -514,5 +514,6 @@ st.markdown("""
         Dados provenientes do repositório <strong>IBICT - BDTD</strong><br>
     </div>
 """, unsafe_allow_html=True)
+
 
 
