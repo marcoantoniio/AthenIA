@@ -97,10 +97,10 @@ col1, col2 = st.columns([1, 8])
 with col1:
     try:
         st.image(r"IESB.jpg", width=200)
-        st.image(r"IBICT.jpg", width=200)
+        st.image(r"Athenia.png", width=200)
     except Exception:
         st.caption("Logo IESB")
-        st.caption("Logo IBICT")
+        st.caption("Logo Athenia")
 
 
 with col2:
@@ -514,6 +514,7 @@ st.markdown("""
         Dados provenientes do repositório <strong>IBICT - BDTD</strong><br>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
