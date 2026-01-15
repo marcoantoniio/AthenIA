@@ -1,5 +1,5 @@
 <p align="center">
-   <h1 align="center">Chatbot Acadêmico BDTD 📚</h1>
+   <h1 align="center">AthenIA</h1>
    <p align="center">
       Aplicação em <b>Streamlit</b> para consulta à <b>Biblioteca Digital Brasileira de Teses e Dissertações (BDTD/IBICT)</b>, com foco em <b>preservação digital</b> e enriquecimento das informações com <b>IA generativa</b>.
    </p>
