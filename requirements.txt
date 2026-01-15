@@ -5,3 +5,4 @@ PyMuPDF
 nltk
 rank_bm25
 numpy
+python-dotenv
